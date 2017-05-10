@@ -1,0 +1,105 @@
+/*CSS RESET*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+max-width: 50%;
+height: auto;
+}
+
+
+/*GENERAL HELPER CLASSES*/
+
+.no-padding { padding: 0; }
+
+.left         { text-align: left; }
+
+.centered     { text-align: center; }
+
+.light-bg    { background-color: #fcfcfc; }
+/*.dark-bg     { background-color: rgb(60,60,60); }*/
+.feat-bg     { background-color: lightgrey ; }
+
+/* universal styles*/
+
+body{
+
+}
+
+h1, h2, h3, h4, h5, h6{
+
+}
+
+a{
+
+}
+
+i{
+
+}
+
+button{
+
+}
+
+h1, h2, h3{
+font-family: 'Libre Baskerville', serif;
+}
+
+p, a{
+font-family: 'Raleway', sans-serif;
+}
+
+/* ---- Layout ---- */
+
+/* ---- Typography ---- */
+
+a:hover {
+  background-color: #ff5851;
+}
+
+/*header section*/
+
+
+header{
+
+}
+
+nav{
+
+}
+
+nav a{
+
+}
+
+/*about section*/
+
+section.about{
+
+}
+
+.about h2{
+
+}
+
+/*Skills section*/
+
+section.skills{
+
+}
+
+/*blog section*/
+
+section.blog{
+
+}
+
+/*footer section*/
+
+footer{
+
+}

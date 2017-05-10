@@ -1,0 +1,204 @@
+/*CSS RESET*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+[class*=col-], [class^=col] {
+padding: 0%;
+}
+
+
+/*GENERAL HELPER CLASSES*/
+
+.no-padding { padding: 0; }
+
+.left         { text-align: left; }
+
+.centered     { text-align: center; }
+
+.flex-centered{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right{ text-align: right;}
+
+.light-bg    { background-color: #fcfcfc; }
+/*.dark-bg     { background-color: rgb(60,60,60); }*/
+.feat-bg     { background-color: lightgrey ; }
+
+/* universal styles*/
+
+.button  {
+  padding: 10px;
+  margin: 20px;
+}
+
+nav{
+  padding: 10px;
+  margin: 20px;}
+
+.nav-links a, .button{
+  border: 5px solid #3f3f44;
+  text-decoration: none;
+  color: #3f3f44;
+  padding: 1.5% 5%;
+  display: inline-block;
+  text-align: right;
+}
+
+body{
+padding-top: 2%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: #3f3f44;
+}
+
+p{
+  color: #3f3f44;
+}
+
+a{
+  text-decoration: none;
+  color: #3f3f44;
+}
+
+a:hover {
+  background-color: #ff5851;
+  color: white;
+border: none;
+}
+
+/* ---- Layout ---- */
+
+/* ---- Typography ---- */
+
+h1, h2, h3{
+font-family: 'Sanchez', serif;
+}
+
+p, a{
+font-family: 'Josefin Sans', sans-serif;
+}
+
+/*header section*/
+
+
+.logo img{
+  max-width: 20%;
+  border: none;
+  padding: none;
+}
+
+.logo a{
+  border: none;
+
+}
+
+.logo a:hover{
+  background-color: #fcfcfc;
+}
+
+
+/*featured image section*/
+
+.hello{
+background-image: url("../images/hello-background.png");
+background-size: cover;
+width: 50%;
+height: 50vh;
+font-size: 4rem;
+justify-content: flex-end;
+padding-right: 2%;
+
+}
+
+
+
+.featured-image {
+    text-align: right;
+    margin: 5%;
+
+}
+
+
+
+
+
+/*my story section*/
+
+section.my-story {
+padding : 2%;
+
+}
+
+.button.my-story {
+  border: 5px solid #3f3f44;
+  text-decoration: none;
+  color: #3f3f44;
+  padding: 1.5% 5%;
+  display: ;
+}
+
+
+/*nav options section*/
+
+section.nav-options{
+  padding: 2%;
+}
+
+nav-options div{
+padding: 20%;
+max-width: 10%;
+}
+
+.marketing, .writer, .traveller{
+    position: absolute;
+    border: 5px solid #3f3f44;
+}
+
+.marketing-image, .writer-image, .traveller-image{
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+
+}
+
+/*book section*/
+
+section.book{
+  padding: 2%;
+}
+
+.book img{
+max-width: 100%;
+}
+
+/*mosaic section*/
+
+
+
+/*footer section*/
+
+footer{
+background-color: #3f3f44;
+}
+
+footer i{
+color: white;
+}
+
+.footer-icons i{
+
+}
