@@ -1,0 +1,31 @@
+---
+layout: default
+title: KW poems
+
+poems:
+  - pic-text: Empty
+    image-path: /images/bwprint.png
+    class: poem-item--height1
+  - pic-text: Playing with fire
+    image-path: /images/bwprint.png
+    class: poem-item--height2
+  - pic-text: I Saw You
+    image-path: /images/bwprint.png
+    class: poem-item--height3
+  - pic-text: Plantito
+    image-path: /images/bwprint.png
+    class: poem-item--height4
+---
+
+<div class="poem-layout">
+
+
+
+{% for poem in page.poems %}
+
+  <div class="poem-item{{poem.class}}" style="background-image:url('{{poem.image-path}}')">
+      <h3> {{poem.pic-text}}</h3>
+    </div>
+
+{% endfor %}
+ </div>
