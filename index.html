@@ -1,48 +1,30 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: Hello KW
+navops:
+  - title: Marketer
+    intro: Curious digital marketer with an afinity for user experience + analytics.
+    image: /images/marketing.jpg
+  - title: Writer
+    intro: University of Kent literature graduate with 7+ creative writing experience.
+    image: /images/book.jpg
+  - title: Traveller
+    intro: Travelling deeper through travel writing + Wading Wade, a useful travel blog.
+    image: /images/suitcase.png
+---
 
-<head>
 
-<title> {{page.title}} </title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.3.1/gridlex.min.css">
-<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Work+Sans" rel="stylesheet">
-<script src="https://use.fontawesome.com/5d58ec90b4.js"></script>
-<link href="css/main.css" rel="stylesheet"  type="text/css">
-
-<!-- always stylesheet last! -->
-
-</head>
-
-<body>
-  <!-- header section! -->
-<header>
-  <nav class="grid-spaceBetween col-12">
-    <div class="logo col-3">
-      <a href= "/">
-      <img src="images/KW.png" />
-      </a>
-    </div>
-    <div class="col-8 nav-links">
-      <a href="html.mystory">My Story</a>
-      <a href="html.marketer">Marketer</a>
-      <a href="html.writer">Writer</a>
-      <a href="html.traveller">Traveller</a>
-      <a href="html.contact">Contact</a>
-    </div>
-  </nav>
-</header>
 
 <!-- featured image section  -->
 
 <section class="featured-image">
 
 
-<!-- set background image in css-->
-    <div class="hello flex-centered">
-<h2>HELLO.</h2>
-    </div>
+  <!-- set background image in css-->
+<div class="hello flex-centered">
+  <h2>HELLO.</h2>
   </div>
+</div>
 
 </section>
 
@@ -51,8 +33,9 @@
 <!-- my story section  -->
 
 <section class="my-story">
-  <div class= "my-story grid col-12">
 
+
+  <div class= "my-story grid col-12">
     <div class="col-4">
       <img src="images/kw-black-and-white.jpg" />
     </div>
@@ -60,92 +43,42 @@
     <div class="col-8">
       <div>
         <div class="my-story-box-border">
+          <div class= "my-story-box">
 
-        <div class= "my-story-box">
-
-
-        <h1 class= "left">I'm Kyomi...</h1>
-        <p class= "left">A fan of marketing, travel, writing and life. Learn more about these three areas of my life by journeying through this site. </p>
-      </div>
-        <div class="right" >
-          <a href="html.my-story" class= "button">My Story</a>
+            <h1 class= "left">I'm Kyomi...</h1>
+            <p class= "left">A fan of marketing, travel, writing and life. Learn more about these three areas of my life by journeying through this site. </p>
+          </div>
+          <div class="right" >
+            <a href="html.my-story" class= "button">My Story</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- nav options section  -->
+  <!-- nav options section  -->
 
-<section class="nav-options">
+  <section class="nav-options">
 
-  <div class="grid col-12">
+    <div class="grid col-12">
 
-    <div class="col-4">
-      <div class="nav-box">
-        <div class="nav-box-content">
-          <img src="images/marketing.jpg" />
-<div class="nav-box-cta">
+  {% for navop in page.navops %}
 
-          <h2 class= "centered">Marketer</h2>
-</div>
-          <p class= "centered">
-            Curious digital marketer with an afinity for user experience + analytics.
-          </p>
-
+      <div class="col-4">
+        <div class="nav-box">
+          <div class="nav-box-content">
+            <img src="{{navop.image}}" />
+              <div class="nav-box-cta">
+                <h2>{{ navop.title }}</h2>
+              </div>
+            <p>{{ navop.intro }}</p>
+          </div>
+          <div class="nav-box-border"></div>
         </div>
-        <div class="nav-box-border"></div>
       </div>
-    </div>
 
-    <div class="col-4">
-      <div class="nav-box">
-        <div class="nav-box-content">
-          <img src="images/book.jpg" />
-          <h2 class= "centered">Writer</h2>
-          <p class= "centered">
-            University of Kent literature graduate with 7+ creative writing experience.
-          </p>
-        </div>
-        <div class="nav-box-border"></div>
-      </div>
-    </div>
+{% endfor %}
 
-    <div class="col-4">
-      <div class="nav-box">
-        <div class="nav-box-content">
-          <img src="images/suitcase.png" />
-          <h2 class= "centered">Traveller</h2>
-          <p class= "centered">
-            Travelling deeper through travel writing + Wading Wade, a useful travel blog.
-          </p>
-        </div>
-        <div class="nav-box-border"></div>
-      </div>
-    </div>
-
-    <!-- <div class="col-4 nav-box-content">
-      <div>
-        <img src="images/book.jpg" />
-        <h2 class= "centered">Writer</h2>
-        <p class= "centered">User centric, analytical, blah. 5+ years experience with digital marketing.</p>
-    </div>
-    <div class="nav-box">
-
-    </div>
-    </div>
-
-    <div class="col-4 nav-box-content">
-    <div>
-      <img src="images/suitcase.png" />
-      <h2 class= "centered">Traveller</h2>
-      <p class= "centered">User centric, analytical, blah. 5+ years experience with digital marketing.</p>
-    </div>
-    <div class="nav-box">
-    </div>
-    </div> -->
-
-  </div>
 </section>
 
 <!-- book section  -->
@@ -162,40 +95,23 @@
       <div>
         <div class="book-border">
 
-        <div class= "book-box">
+          <div class= "book-box">
 
 
-        <h3 class= "left">Sadness and Short Bliss</h3>
-        <p class= "left">Sadness and Short Bliss is the debut poetry collection by Kyomi Wade out now. 51 poems spanning 7+ years, exploring the thoughts of a pensive young woman, growing up, falling in love, mourning loss, assigning emotions and making sense of the world.</p>
-      </div>
-        <div class="right" >
-          <a href="html.my-story" class= "button">Learn More</a>
+            <h3 class= "left">Sadness and Short Bliss</h3>
+            <p class= "left">Sadness and Short Bliss is the debut poetry collection by Kyomi Wade out now. 51 poems spanning 7+ years, exploring the thoughts of a pensive young woman, growing up, falling in love, mourning loss, assigning emotions and making sense of the world.</p>
+          </div>
+          <div class="right" >
+            <a href="html.my-story" class= "button">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- image mosaic section  -->
-<section class="mosaic-home">
+  <!-- image mosaic section  -->
+  <section class="mosaic-home">
 
-  <!-- will learn this later -->
+    <!-- will learn this later -->
 
-</section>
-
-
-  <!--this is the footer section!-->
-  <footer>
-<div class="centered">
-
-    <div class="footer-icons">
-      <a href="https://twitter.com/KyomiWade" target="_blank">
-      <i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/kyomiwade/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/kyomiwade/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    </div>
-
-</div>
-  </footer>
-
-  </html>
+  </section>
