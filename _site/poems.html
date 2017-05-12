@@ -6,7 +6,9 @@
 
 <title> KW poems </title>
 
-<link href="path/to/lightbox.css" rel="stylesheet">
+<script src="jquery-3.2.1.min.js"></script>
+
+<link href="/css/lightbox.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.3.1/gridlex.min.css">
 <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Work+Sans" rel="stylesheet">
@@ -45,58 +47,60 @@
 <div class="poem-layout" id="portfolio-grid">
 
 
-
-  <div class="poem-item poem-item--height flex-centered hidden-stuff" style="background-image:url('/images/empty.jpg')">
-
-    <h3> Empty</h3>
+<a class="poem-item poem-item--height" href="" data-lightbox="image-1" data-title="">
+  <div class="flex-centered hidden-stuff poem-background" style="background-image:url('/images/empty.jpg')">
+<!-- lightbox code - -->
+    <h3 class="poem-title"> Empty</h3>
   </div>
+</a>
 
-
-
-  <div class="poem-item poem-item--height2 flex-centered hidden-stuff" style="background-image:url('/images/fire.jpg')">
-
-    <h3> Playing with fire</h3>
+<a class="poem-item poem-item--height2" href="/images/pwf.jpg" data-lightbox="image-1" data-title="hey poem">
+  <div class="flex-centered hidden-stuff poem-background" style="background-image:url('/images/fire.jpg')">
+<!-- lightbox code - -->
+    <h3 class="poem-title"> Playing with fire</h3>
   </div>
+</a>
 
-
-
-  <div class="poem-item poem-item--height3 flex-centered hidden-stuff" style="background-image:url('/images/eyes.jpg')">
-
-    <h3> I Saw You</h3>
+<a class="poem-item poem-item--height3" href="" data-lightbox="image-1" data-title="">
+  <div class="flex-centered hidden-stuff poem-background" style="background-image:url('/images/eyes.jpg')">
+<!-- lightbox code - -->
+    <h3 class="poem-title"> I Saw You</h3>
   </div>
+</a>
 
-
-
-  <div class="poem-item poem-item--height2 flex-centered hidden-stuff" style="background-image:url('/images/plantito.jpg')">
-
-    <h3> Plantito</h3>
+<a class="poem-item poem-item--height2" href="" data-lightbox="image-1" data-title="">
+  <div class="flex-centered hidden-stuff poem-background" style="background-image:url('/images/plantito.jpg')">
+<!-- lightbox code - -->
+    <h3 class="poem-title"> Plantito</h3>
   </div>
+</a>
 
-
-
-  <div class="poem-item poem-item--height3 flex-centered hidden-stuff" style="background-image:url('/images/cake.jpg')">
-
-    <h3> A Slice of Life</h3>
+<a class="poem-item poem-item--height3" href="" data-lightbox="image-1" data-title="">
+  <div class="flex-centered hidden-stuff poem-background" style="background-image:url('/images/cake.jpg')">
+<!-- lightbox code - -->
+    <h3 class="poem-title"> A Slice of Life</h3>
   </div>
+</a>
 
-
-
-  <div class="poem-item poem-item--height flex-centered hidden-stuff" style="background-image:url('/images/lines.jpg')">
-
-    <h3> Out of Line</h3>
+<a class="poem-item poem-item--height" href="" data-lightbox="image-1" data-title="">
+  <div class="flex-centered hidden-stuff poem-background" style="background-image:url('/images/lines.jpg')">
+<!-- lightbox code - -->
+    <h3 class="poem-title"> Out of Line</h3>
   </div>
+</a>
 
-
-
-  <div class="poem-item poem-item--height flex-centered hidden-stuff" style="background-image:url('/images/communication.jpg')">
-
-    <h3> Communication</h3>
+<a class="poem-item poem-item--height" href="" data-lightbox="image-1" data-title="">
+  <div class="flex-centered hidden-stuff poem-background" style="background-image:url('/images/communication.jpg')">
+<!-- lightbox code - -->
+    <h3 class="poem-title"> Communication</h3>
   </div>
-
+</a>
 
 
  </div>
 </section>
+
+
 
 <!-- writer ctas -->
 
@@ -112,6 +116,30 @@
         <h2 class="centered">Instagram</h2>
    </div>
   </a>
+</section>
+
+
+  <div>
+<h2 class="centered">Purchase the Book</h2>
+  </div>
+
+<section class="purchase-poems">
+  <div class="grid col-12">
+
+
+
+    <div class="col-4">
+      <div class="purchase-box">
+        <div class="purchase-box-content">
+          <img src="sadness-and-short-bliss.jpg" />
+            <div class="purchase-box-cta">
+              <h2>Buy the Book</h2>
+            </div>
+          <p>To get yourself a copy of the debut poetry collection, <i>Sadness and Short Bliss</i>, simply click to buy on Amazon or electronically via eBook.</p>
+        </div>
+        <div class="purchase-box-border"></div>
+      </div>
+    </div>
 </section>
 
 
@@ -137,6 +165,7 @@
 
 <script src="/js/main.js"></script>
 
-<script src="path/to/lightbox.js"></script>
+<script src="/js/lightbox.js"></script>
+
 </body>
 </html>

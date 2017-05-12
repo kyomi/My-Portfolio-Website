@@ -9,6 +9,8 @@ poems:
   - pic-text: Playing with fire
     image-path: /images/fire.jpg
     class: poem-item--height2
+    lightbox: /images/pwf.jpg
+    caption: hey poem
   - pic-text: I Saw You
     image-path: /images/eyes.jpg
     class: poem-item--height3
@@ -34,16 +36,18 @@ poems:
 <div class="poem-layout" id="portfolio-grid">
 
 {% for poem in page.poems %}
-
-  <div class="poem-item {{poem.class}} flex-centered hidden-stuff" style="background-image:url('{{poem.image-path}}')">
-
-    <h3> {{poem.pic-text}}</h3>
+<a class="poem-item {{poem.class}}" href="{{poem.lightbox}}" data-lightbox="image-1" data-title="{{poem.caption}}">
+  <div class="flex-centered hidden-stuff poem-background" style="background-image:url('{{poem.image-path}}')">
+<!-- lightbox code - -->
+    <h3 class="poem-title"> {{poem.pic-text}}</h3>
   </div>
-
+</a>
 {% endfor %}
 
  </div>
 </section>
+
+
 
 <!-- writer ctas -->
 
@@ -59,4 +63,28 @@ poems:
         <h2 class="centered">Instagram</h2>
    </div>
   </a>
+</section>
+
+
+  <div>
+<h2 class="centered">Purchase the Book</h2>
+  </div>
+
+<section class="purchase-poems">
+  <div class="grid col-12">
+
+
+
+    <div class="col-4">
+      <div class="purchase-box">
+        <div class="purchase-box-content">
+          <img src="sadness-and-short-bliss.jpg" />
+            <div class="purchase-box-cta">
+              <h2>Buy the Book</h2>
+            </div>
+          <p>To get yourself a copy of the debut poetry collection, <i>Sadness and Short Bliss</i>, simply click to buy on Amazon or electronically via eBook.</p>
+        </div>
+        <div class="purchase-box-border"></div>
+      </div>
+    </div>
 </section>
