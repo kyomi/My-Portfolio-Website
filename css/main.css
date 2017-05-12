@@ -36,6 +36,16 @@ padding: 0%;
 /*.dark-bg     { background-color: rgb(60,60,60); }*/
 .feat-bg     { background-color: lightgrey ; }
 
+.hidden-stuff *{
+  opacity: 0;
+  transition: 3s;
+
+}
+
+.hidden-stuff:hover *{
+  opacity: 1;
+}
+
 /* universal styles*/
 
 .button  {
@@ -285,7 +295,6 @@ font-size: 1.5rem;
 .featured-image-pages {
 text-align: right;
 padding: 2% 5% 25% 5%;
-background-image: url(../images/sadness-and-short-bliss.png);
 background-size: cover;
 background-position: bottom;
 }
@@ -326,8 +335,176 @@ padding: 4%;
 
 /*Poems page*/
 
-.poem-item { width: 200px; }
-.poem-item--height1 { height: 200px; }
-.poem-item--height2 { height: 400px; }
-.poem-item--height3 { height: 200px; }
-.poem-item--height4 { height: 500px; }
+.poem-item {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: top center;
+  }
+
+.poem-item--height2 { height: 410px; }
+.poem-item--height3 { height: 620px; }
+.poem-item--height4 { height: 830px; }
+.poem-item--height5 { height: 200px; }
+.poem-item--height6 { height: 200px; }
+
+
+.poem-layout{
+  text-align:center;
+  margin:auto;
+  display:block;
+  width:1880px;
+}
+
+.poem-layout div{
+
+}
+/* grid specific only change if your confident in your code */
+.grid{
+  display:none;
+}
+
+
+.poem-item-w2x{
+  width:410px;
+}
+
+.poem-item-h2x{
+  height:410px;
+}
+@media screen and (max-width: 1900px) {
+  /* 5 columns for larger screens */
+  #portfolio-grid{
+    width:1670px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  /* 5 columns for larger screens */
+  #portfolio-grid{
+    width:1250px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* 5 columns for larger screens */
+  #portfolio-grid{
+    width:1040px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  /* 5 columns for larger screens */
+  #portfolio-grid{
+    width:850px;
+  }
+}
+@media screen and (max-width: 860px) {
+
+  #portfolio-grid{
+    width:630px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  #portfolio-grid{
+    width:410px;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+
+  #portfolio-grid{
+    width:210px;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+
+  #portfolio-grid{
+    width:200px;
+  }
+  .grid{width:200px;
+  height:200px;}
+}
+
+
+/*marketer page*/
+
+/*marketing skills*/
+
+section.marketing-skills{
+  padding: 6% 15% 10% 15%;
+  min-height: 70vh;
+}
+
+.nav-options img{
+
+}
+
+.marketing-skills-box {
+  padding: 10%;
+  position: relative;
+}
+
+.marketing-skills-content {
+  padding: 20px;
+}
+
+.marketing-skills-border {
+  position: absolute;
+  border: 4px solid #ff5851;
+  top: 30%;
+  width: 80%;
+  height: 80%;
+  z-index: -1;
+  background-color: #ff5851;
+}
+
+.marketing-skills-box h2{
+  padding: 5% 10% 5% 10% ;
+  color: #fcfcfc;
+}
+
+.marketing-skills-box i{
+  padding: 10% 10% 5% 10%;
+    font-size: 5rem;
+}
+
+ .marketing-skills .big-icon i{
+  font-size: 5rem;
+  display: inline-block;
+}
+
+/*.nav-box-cta{
+  border: 5px solid #ff5851;
+  background-color: #ff5851;
+}*/
+
+h2.nav-box-cta{
+  color: white;
+}
+
+
+
+
+/*company logo section*/
+
+.company-logos-section{
+
+}
+.company-logos-section img{
+  max-height: 100px;
+}
+
+.history-title{
+  padding: 5% 8% 14% 8%;
+  font-size: 1.5rem;
+
+}
+
+.company-logos-grid{
+padding: 0% 8% 10% 8%;
+}

@@ -5,7 +5,7 @@ title: KW poems
 poems:
   - pic-text: Empty
     image-path: /images/bwprint.png
-    class: poem-item--height1
+    class: poem-item--height
   - pic-text: Playing with fire
     image-path: /images/bwprint.png
     class: poem-item--height2
@@ -14,17 +14,33 @@ poems:
     class: poem-item--height3
   - pic-text: Plantito
     image-path: /images/bwprint.png
-    class: poem-item--height4
+    class: poem-item--height2
+  - pic-text: A Slice of Life
+    image-path: /images/bwprint.png
+    class: poem-item--height3
+  - pic-text: Out of Line
+    image-path: /images/bwprint.png
+    class: poem-item--height
+  - pic-text: Communication
+    image-path: /images/bwprint.png
+    class: poem-item--height
 ---
 
-<div class="poem-layout">
+<section class="poems-text">
+
+<h1 class="centered">Discover Poems</h1>
+
+
+<div class="poem-layout" id="portfolio-grid">
 
 {% for poem in page.poems %}
 
-  <div class="poem-item {{poem.class}}" style="background-image:url('{{poem.image-path}}')">
+  <div class="poem-item {{poem.class}} flex-centered hidden-stuff" style="background-image:url('{{poem.image-path}}')">
+
     <h3> {{poem.pic-text}}</h3>
   </div>
 
 {% endfor %}
 
  </div>
+</section>
