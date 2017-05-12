@@ -264,6 +264,12 @@ padding: 2%;
 
 footer i{
 color: white;
+padding: 3%;
+}
+
+
+footer .footer-icons i:hover{
+color: #3f3f44;
 }
 
 footer .footer-icons i{
@@ -384,6 +390,7 @@ h3.poem-title{
   section.purchase-poems{
     padding: 6% 15% 10% 15%;
     min-height: 70vh;
+    background-color: lightgray;
   }
 
   .nav-options img{
@@ -392,21 +399,26 @@ h3.poem-title{
 
   .purchase-box {
     padding: 10%;
-    position: relative;
   }
 
   .purchase-box-content {
     padding: 20px;
+      position: relative;
+      text-align: right;
+
+    right: -7rem;
   }
 
   .purchase-box-border {
-    position: absolute;
+    position: relative;
     border: 4px solid #3f3f44;
-    top: 30%;
+}
+
+    /*top: 30%;
     width: 80%;
     height: 70%;
     z-index: -1;
-  }
+  }*/
 
   /*.nav-box-cta{
     border: 5px solid #ff5851;
@@ -417,6 +429,9 @@ h3.poem-title{
     color: white;
   }
 
+h2.purchase-title{
+  padding: 0% 12% 12% 12%;
+}
 .
 /* grid specific only change if your confident in your code */
 .grid{
