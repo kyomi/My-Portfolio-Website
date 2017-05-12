@@ -79,6 +79,11 @@ a:hover {
 border: none;
 }
 
+.writer-ctas a:hover {
+  background-color: #ff5851;
+  color: white;
+  border: none;
+}
 /* ---- Layout ---- */
 
 /* ---- Typography ---- */
@@ -272,7 +277,9 @@ padding-right: 2%;
 
 .featured-image-pages h3{
   text-align: left;
-  margin: 12% 5% 10% 5%;
+position: relative;
+bottom: -7rem;
+font-size: 1.5rem;
 }
 
 .featured-image-pages {
@@ -282,6 +289,7 @@ background-image: url(../images/sadness-and-short-bliss.png);
 background-size: cover;
 background-position: bottom;
 }
+
 
 /*pages main text section*/
 
@@ -311,14 +319,14 @@ padding: 4%;
 
 .writer-ctas{
   background-color: #fcfcfc;
-  padding: 10%;
+  padding: 10% 28%;
 }
 
 
 
 /*Poems page*/
 
-.poem-item { width: 15%; }
+.poem-item { width: 200px; }
 .poem-item--height1 { height: 200px; }
 .poem-item--height2 { height: 400px; }
 .poem-item--height3 { height: 200px; }
