@@ -1,0 +1,70 @@
+---
+layout: default
+title: My Story
+navops:
+  - title: Marketer
+    intro: Curious digital marketer afinity for user experience + analytics.
+    image: /images/marketing.jpg
+  - title: Writer
+    intro: University of Kent literature graduate with 7+ creative writing experience.
+    image: /images/book.jpg
+  - title: Traveller
+    intro: Travelling deeper through travel writing + Wading Wade, a useful travel blog.
+    image: /images/suitcase.png
+---
+
+<section class="grid story-about">
+  <div class="about-box col-6">
+    <h1>My Story</h1>
+    <p>Hello this is my story Lorem ipsum dolor sit amet, qui at eros exerci virtute, at tota tempor tibique est, ornatus albucius vulputate an nec. His ad tractatos consectetuer.</p>
+<div class="right" >
+<a href="" class= "button">Buy book</a>
+</div>
+    <div class="about-box-image">
+    <img src="/images/kw.jpg"
+    </div>
+  </div>
+</section>
+
+<!--nav ops  -->
+
+<section class="nav-options centered">
+  <div class="grid col-12">
+
+{% for navop in page.navops %}
+
+    <div class="col-4">
+      <div class="nav-box">
+        <div class="nav-box-content">
+          <img src="{{navop.image}}" />
+            <div class="nav-box-cta">
+              <h2>{{ navop.title }}</h2>
+            </div>
+          <p>{{ navop.intro }}</p>
+        </div>
+        <div class="nav-box-border"></div>
+      </div>
+    </div>
+
+{% endfor %}
+
+</section>
+
+<!-- ctas -->
+
+<section class="grid-spaceBetween writer-ctas">
+
+    <div class="funky-buttons">
+<a href="html.contact" target="_blank">
+    <div class="col-5 writer-buttons">
+        <h2 class="centered">Contact</h2>
+  </div>
+</div>
+  </a>
+  <a href="https://www.linkedin.com/in/kyomiwade/" target="_blank">
+    <div class="funky-buttons">
+      <div class="col-5 writer-buttons">
+        <h2 class="centered">LinkedIn</h2>
+   </div>
+  </a>
+</section>
