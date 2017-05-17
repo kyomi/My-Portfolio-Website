@@ -233,6 +233,11 @@ section.nav-options{
   z-index: -1;
 }
 
+.nav-box-border:hover{
+  background-color: lightgray;
+  transition: 3s;
+}
+
 /*.nav-box-cta{
   border: 5px solid #ff5851;
   background-color: #ff5851;
