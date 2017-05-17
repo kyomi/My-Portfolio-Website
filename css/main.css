@@ -87,12 +87,14 @@ a:hover {
   background-color: #ff5851;
   color: white;
   border-color: white;
+  transition: 1s;
 }
 
 .writer-ctas a:hover {
   background-color: #ff5851;
   color: white;
   border: none;
+  transition: 1s;
 }
 /* ---- Layout ---- */
 
@@ -197,6 +199,7 @@ border: 2px solid #3f3f44;
   background-color: #fcfcfc;
   color: #3f3f44;
 border: 4px solid #3f3f44;
+transition: 1s;
 }
 
 .my-story img{
@@ -347,6 +350,7 @@ padding: 4%;
 }
 .writer-buttons:hover{
   background-color:#ff5851;
+  transition: 1s;
 }
 
 .funky-buttons{

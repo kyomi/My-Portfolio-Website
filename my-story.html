@@ -5,12 +5,15 @@ navops:
   - title: Marketer
     intro: Curious digital marketer afinity for user experience + analytics.
     image: /images/marketing.jpg
+    link: marketer.html
   - title: Writer
     intro: University of Kent literature graduate with 7+ creative writing experience.
     image: /images/book.jpg
+    link: writer.html
   - title: Traveller
     intro: Travelling deeper through travel writing + Wading Wade, a useful travel blog.
     image: /images/suitcase.png
+    link: traveller.html
 ---
 
 <section class="grid story-about">
@@ -34,6 +37,7 @@ navops:
 {% for navop in page.navops %}
 
     <div class="col-4">
+      <a href="{{navop.link}}">
       <div class="nav-box">
         <div class="nav-box-content">
           <img src="{{navop.image}}" />
@@ -44,6 +48,7 @@ navops:
         </div>
         <div class="nav-box-border"></div>
       </div>
+    </a>
     </div>
 
 {% endfor %}
