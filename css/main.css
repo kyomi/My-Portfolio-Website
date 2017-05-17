@@ -85,13 +85,13 @@ a{
 
 a:hover {
   background-color: #ff5851;
-  color: white;
-  border-color: white;
+  color: #fcfcfc;
+  border-color: #fcfcfc;
 }
 
 .writer-ctas a:hover {
   background-color: #ff5851;
-  color: white;
+  color: #fcfcfc;
   border: none;
   transition: 1s;
 }
@@ -248,7 +248,7 @@ section.nav-options{
 }*/
 
 h2.nav-box-cta{
-  color: white;
+  color: #fcfcfc;
 }
 /*book section*/
 
@@ -286,7 +286,7 @@ padding: 2%;
 }
 
 footer i{
-color: white;
+color: #fcfcfc;
 padding: 3%;
 }
 
@@ -364,7 +364,7 @@ padding: 4%;
 
 .writer-ctas{
   background-color: #fcfcfc;
-  padding: 10% 28%;
+  padding: 6% 28%;
 }
 
 
@@ -406,7 +406,7 @@ padding: 10%;
   margin: 0%, 5%;
 }
 h3.poem-title{
-  background-color:white;
+  background-color:#fcfcfc;
 }
 
 @media (max-width: 500px) {
@@ -473,7 +473,7 @@ background-color: #fcfcfc;
   }*/
 
   h2.purchase-box-cta{
-    color: white;
+    color: #fcfcfc;
   }
 
 h2.purchase-title{
@@ -604,7 +604,7 @@ section.marketing-skills{
 }*/
 
 h2.nav-box-cta{
-  color: white;
+  color: #fcfcfc;
 }
 
 
@@ -722,5 +722,5 @@ padding:5%;
 }
 
 form{
-  background-color: white;
+  background-color: #fcfcfc;
 }
