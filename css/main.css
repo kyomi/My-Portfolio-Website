@@ -87,7 +87,6 @@ a:hover {
   background-color: #ff5851;
   color: white;
   border-color: white;
-  transition: 1s;
 }
 
 .writer-ctas a:hover {
@@ -351,6 +350,7 @@ padding: 4%;
 .writer-buttons:hover{
   background-color:#ff5851;
   transition: 1s;
+  color: #fcfcfc;
 }
 
 .funky-buttons{
