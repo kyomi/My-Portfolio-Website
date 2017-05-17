@@ -236,7 +236,7 @@ section.nav-options{
 .nav-box-content h2:hover{
   background-color: #ff5851;
   color: #fcfcfc;
-  transition: 3s;
+  transition: 1s;
 }
 
 /*.nav-box-cta{
