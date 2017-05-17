@@ -5,6 +5,7 @@ navops:
   - title: Marketer
     intro: Curious digital marketer afinity for user experience + analytics.
     image: /images/marketing.jpg
+    link: marketer.html
   - title: Writer
     intro: University of Kent literature graduate with 7+ creative writing experience.
     image: /images/book.jpg
@@ -59,6 +60,7 @@ navops:
   {% for navop in page.navops %}
 
       <div class="col-4_sm-12">
+        <a href="{{navop.link}}">
         <div class="nav-box">
           <div class="nav-box-content">
             <img src="{{navop.image}}" />
@@ -69,6 +71,7 @@ navops:
           </div>
           <div class="nav-box-border"></div>
         </div>
+      </a>
       </div>
 
 {% endfor %}
@@ -91,7 +94,7 @@ navops:
             <p class= "left">Sadness and Short Bliss is the debut poetry collection by Kyomi Wade out now. 51 poems spanning 7+ years, exploring the thoughts of a pensive young woman, growing up, falling in love, mourning loss, assigning emotions and making sense of the world.</p>
           </div>
           <div class="right" >
-            <a href="html.my-story" class= "button">Learn More</a>
+            <a href="poems.html" class= "button">Learn More</a>
           </div>
         </div>
       </div>
