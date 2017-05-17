@@ -217,6 +217,7 @@ section.nav-options{
 .nav-box {
   padding: 10%;
   position: relative;
+  height: 95%;
 }
 
 .nav-box-content {
