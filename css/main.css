@@ -233,7 +233,7 @@ section.nav-options{
   z-index: -1;
 }
 
-.nav-box-border:hover{
+.nav-options .nav-box-border:hover{
   background-color: black;
 }
 
