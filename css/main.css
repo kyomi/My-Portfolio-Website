@@ -234,8 +234,7 @@ section.nav-options{
 }
 
 .nav-box-border:hover{
-  background-color: lightgray;
-  transition: 3s;
+  background-color: black;
 }
 
 /*.nav-box-cta{
