@@ -627,11 +627,11 @@ background-color: #fcfcfc;
 }
 
 .about-box-image{
-position: absolute;
-top: 10%;
-right: -55%;
-max-width: 60%;
-max-height: 100%;
+  position: absolute;
+  top: 15%;
+  right: -65%;
+  max-width: 80%;
+  max-height: 100%;
 }
 
 
